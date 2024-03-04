@@ -1,0 +1,89 @@
+.card {
+  border: solid 5px yellow;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  width: 100%;
+  margin: 20px auto;
+  background: linear-gradient(
+    125deg,
+    rgba(0, 75, 255, 1) 0%,
+    rgba(254, 255, 0, 0.4962359943977591) 50%,
+    rgba(255, 0, 215, 0.75) 100%
+  );
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: rotateY(360deg);
+  transition: transform 1s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #333;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.card h5,
+.card h6 {
+  color: #333;
+  margin: 10px 0;
+}
+
+.card .stats,
+.card .types {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.card .stats p,
+.card .types p {
+  margin: 0;
+}
+
+.card .stats span,
+.card .types span {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+}
+
+.card .types img {
+  width: 50px;
+  height: auto;
+}
+
+.card button {
+  background-color: #949494;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.nameStat {
+  background-color: lightgray;
+  padding: 0 5px;
+  border-radius: 25px;
+}
+
+.valueStat {
+  background-color: rgb(0, 170, 255);
+  margin-left: 10px;
+  padding: 0 5px;
+  border-radius: 25px;
+}
